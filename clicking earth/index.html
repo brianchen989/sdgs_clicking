@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking Earth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="progress-background"></div>
+
+    <div class="container">
+        <!-- 左側：資訊與互動區 -->
+        <div class="left-panel">
+            <div class="info-section">
+                <h1>永續點數: <span id="score">0</span></h1>
+                <h2>每秒產量 (IPS): <span id="ips">0</span></h2>
+            </div>
+            
+            <div id="skills-section" class="skills-section">
+                <!-- 技能按鈕動態生成在這裡 -->
+            </div>
+
+            <div class="interaction-section">
+                <button id="earth-btn">
+                    <img src="images/earth1.png" alt="Earth" id="earth-img">
+                </button>
+            </div>
+        </div>
+
+        <!-- 右側：商店區 -->
+        <div class="right-panel">
+            <div class="store-section">
+                <h2>永續商店</h2>
+                <div id="upgrades-container">
+                    <!-- 升級項目會由 JS 動態生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
